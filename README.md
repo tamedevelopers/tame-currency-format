@@ -1,15 +1,15 @@
 # tame-currency-format
 ### @author Fredrick Peterson (Tame Developers)
 ### 2023 Fredrick Peterson
-### Intl.NumberFormat
 
 Javascript/JQuery Plugin for Number/Currency Formatting
 ```
 |--------------------------------------------------------------------------
-|This Library uses the Javascript Intl.NumberFormat
-|https://github.com/bachors/PHP-Image-Compressor-Class
+|This Plugin uses the Javascript Intl.NumberFormat
+|[Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+| Minified version is 3kb for Javacript and 4kb for jQuery
 ```
-[Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+[Reach me on Linkedin](https://www.linkedin.com/in/fredipeterson/)
 
 * [Installation](#installation)
 * [Object Properties](#object-properties)
