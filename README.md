@@ -37,7 +37,7 @@ Not avaialable on npm yet.
 
 ## Object Properties
 ``` 
-`ALL objected properties and values`
+`ALL objects properties and values`
 ```
 
 | Key               | Default   | Accepts-Data                  |  Description                                      |
