@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tame Currency Format - Javascript Example</title>
+    <style>
+        .title{
+            margin: 0 0 20px;
+        }
+        .amount{
+            margin: 0 0 20px;
+            color: #3e3939;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Example</h1>
+    <div>
+        <span class="title">PRICE:</span>
+        <p class="amount" id="amount"></p>
+
+        <span class="title">PRICE 2:</span>
+        <p class="amount" id="amount2"></p>
+
+        <span class="title">PRICE 3:</span>
+        <p class="amount" id="amount3"></p>
+
+        <span class="title">PRICE 4:</span>
+        <p class="amount" id="amount4"></p>
+
+        <span class="title">PRICE 5:</span>
+        <p class="amount" id="amount5"></p>
+
+
+        <button class="btn5">
+            Change Price 5
+        </button>
+    </div>
+</body>
+    <script src="../js/tameCurrencyFormat.min.js"></script>
+    <script>
+        // this will change the global default currency if not set for each call
+        // to override behaviour set `currency_symbol` to true|false or 'custom currency'
+        // tameCurrency.init('$USD');
+
+        var amount = document.getElementById('amount'),
+            amount2 = document.getElementById('amount2'),
+            amount3 = document.getElementById('amount3'),
+            amount4 = document.getElementById('amount4');
+            amount5 = document.getElementById('amount5');
+            btn5 = document.querySelector('.btn5');
+
+        amount.innerText = tameCurrency.format({
+            currency: 'TRY',
+            currency_symbol: 'TL', //string|true
+            number: 8.99,
+            decimals: 2, //0-4
+            space: false, //true|false
+            display: true, //true|false
+            position: 'right', //false|left|right
+        });
+
+        amount2.innerText = tameCurrency.format({
+            currency: 'EUR',
+            number: 23900,
+            decimals: 2, //0-4
+            space: true, //true|false
+            display: true, //true|false
+            position: 'left', //false|left|right
+        });
+
+        amount3.innerText = tameCurrency.format({
+            currency: 'SEK',
+            number: 21.98,
+            decimals: 2, //0-4
+            space: false, //true|false
+            display: true, //true|false
+            position: false, //false|left|right
+        });
+
+        amount4.innerText = tameCurrency.format({
+            currency: 'USD',
+            number: 21.98,
+            currency_symbol: false,
+        });
+
+        amount5.innerText = tameCurrency.format({
+            currency: 'CNY',
+            currency_symbol: true, //string|true
+            number: 21.98,
+        });
+
+        btn5.addEventListener('click', function(){
+            var regx = /[^0-9.\s]/gi, //regix for allowing only numbers and (.)
+                number = amount5.innerText.replace(regx, ''),
+                number = parseFloat(number) * 1.5;
+
+            tameCurrency.input(amount5, {
+                currency: 'CNY',
+                decimals: 3, //0-4
+                currency_symbol: true, //string|true
+                number: number,
+            });
+        });
+
+    </script>
+</html>
