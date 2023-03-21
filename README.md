@@ -43,7 +43,7 @@ Not avaialable on npm yet.
 | Key               | Default   | Accepts-Data                  |  Description                                      |
 |-------------------|-----------|-------------------------------|---------------------------------------------------|
 | currency          | HKD       | string                        | Currency Code (refer to `currency code` section)  |
-| currency_symbol   | empty     | string \| true \| false       | You can provide your preffered currency symbol or true to override global currrency (if present)    |
+| currency_symbol   | empty     | string \| true \| false       | You can provide your preferred currency symbol or `true` to override global currrency `(if present)`    |
 | display           | true      | true \| false                 | Display currency symbol                           |
 | space             | true      | true \| false                 | Allow space between currency and formatted number |
 | position          | false     | false \| 'left' \| 'right'    | Currency symbol position                          |
