@@ -6,9 +6,9 @@ Javascript/JQuery Plugin for Number/Currency Formatting
 ```
 |--------------------------------------------------------------------------
 |This Plugin uses the Javascript Intl.NumberFormat
-[Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 | Minified version is 3kb for Javacript and 4kb for jQuery
 ```
+[Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 [Reach me on Linkedin](https://www.linkedin.com/in/fredipeterson/)
 
 * [Installation](#installation)
