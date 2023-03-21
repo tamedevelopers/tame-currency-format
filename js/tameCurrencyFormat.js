@@ -47,7 +47,7 @@ const tameCurrency = (function () {
             currency: '',
             currency_symbol: '',
             display: true,
-            space: true,
+            space: false,
             position: false,
             number: 0,
             decimals: 2,

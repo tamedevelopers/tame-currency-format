@@ -45,7 +45,7 @@ Not avaialable on npm yet.
 | currency          | HKD       | string                        | Currency Code (refer to `currency code` section)  |
 | currency_symbol   | empty     | string \| true \| false       | You can provide your preferred currency symbol or `true` to override global currrency `(if present)`    |
 | display           | true      | true \| false                 | Display currency symbol                           |
-| space             | true      | true \| false                 | Allow space between currency and formatted number |
+| space             | false     | true \| false                 | Allow space between currency and formatted number |
 | position          | false     | false \| 'left' \| 'right'    | Currency symbol position                          |
 | number            | 0         | int \| string                 | Numbers to format                                 |
 | decimals          | 2         | 0-4                           | Decimal points formating (from 1 to 4 decimals)   |
